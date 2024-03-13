@@ -200,6 +200,23 @@ background: #404bbf;
     overflow: hidden;
 }
 
+.second-list-icon {
+    display: flex;
+    gap: 24px;
+}
+
+.second-list-icon-item {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+}
+
+.second-list-link {
+    display: inline-block;
+}
+
 .page {
     display: flex;
     gap: 24px;

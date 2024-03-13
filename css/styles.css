@@ -352,7 +352,16 @@ padding-bottom: 32px;
     padding-bottom: 100px;
 }
 
+.ground-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .logo-container {
+    margin-right: 120px;
+}
+
+.logo-link {
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -374,4 +383,26 @@ padding-bottom: 32px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-social-container {
+    width: 208px;
+    height: 80px;
+}
+
+.footer-social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 232px;
+    height: 40px;
 }

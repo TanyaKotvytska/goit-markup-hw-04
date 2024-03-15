@@ -304,6 +304,33 @@ padding-bottom: 32px;
     color: #434455;
 }
 
+.social-team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.social-link-team {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link-team-icon {
+    fill: white;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-team:hover,
+.social-link-team:focus {
+    background-color: #404BBF;
+}
+
 .fourth-sect {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -329,6 +356,10 @@ padding-bottom: 32px;
 
 .card-list:hover .card-cover-text{
     transform: translateY(0);
+}
+
+.card-list:hover .card-container {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .card-img-wrap {

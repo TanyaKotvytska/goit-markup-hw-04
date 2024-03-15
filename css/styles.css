@@ -28,6 +28,7 @@ ul {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -124,16 +125,14 @@ color: #404bbf;
 }
 
 .first-sect {
-    background: #2e2f42;
+background: #2e2f42;
     display: block;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(to left,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/people-office\ 1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -156,7 +155,7 @@ button {
     cursor: pointer;
     border-radius: 4px;
     margin: 0 auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover,
@@ -208,7 +207,7 @@ background: #404bbf;
     gap: 24px;
 }
 
-.second-list-icon-item {
+.second-list-icon-wrap {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     background: #f4f4fd;
@@ -322,7 +321,7 @@ padding-bottom: 32px;
 }
 
 .social-link-team-icon {
-    fill: white;
+    fill: #f4f4fd;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -354,11 +353,15 @@ padding-bottom: 32px;
     row-gap: 48px;
 }
 
+.card-list {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .card-list:hover .card-cover-text{
     transform: translateY(0);
 }
 
-.card-list:hover .card-container {
+.card-list:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -377,8 +380,7 @@ overflow: hidden;
     color: #f4f4fd;
     background-color: #4d5ae5;
     height: 100%;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 40px 32px;
     display: flex;
     align-items: center;
     transform: translateY(100%);
@@ -477,11 +479,11 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
-    fill: white;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #f4f4fd;
 }
 
 .footer-link-item:hover,
